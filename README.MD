@@ -5,36 +5,40 @@
 - run `docker-compose up`
 
 #Endpoints
-url: `/oauth2/token`
-payload: 
+## Token (client_credentials)
+- url: `/oauth2/token`
+- payload: 
 `{
 	"client_id": "carlos_loves_mac",
 	"grant_type": "client_credentials",
 	"scope": "user/Patient.read"
  }`
 
-url: `/oauth2/token`
-
-payload:
+## Token (refresh_token)
+- url: `/oauth2/token`
+- payload:
 `{
  	"client_id": "carlos_loves_mac",
  	"grant_type": "refresh_token",
  	"refresh_token": "89b40cb1-ab3a-11e6-a875-0bb6ec958dfb"
  }`
 
-url: `oauth2/token/introspect`
-spec: https://tools.ietf.org/html/rfc7662
-outstanding questions: who is allowed to introspect tokens?
-payload:
+
+## Introspect (refresh_token)
+- url: `oauth2/token/introspect`
+- spec: https://tools.ietf.org/html/rfc7662
+- outstanding questions: who is allowed to introspect tokens?
+- payload:
 `
 {
 	"token": "ACCESS TOKEN HERE"
 }
 `
 
-url: `oauth2/token/revoke`
-spec: https://tools.ietf.org/html/rfc7009
-payload:
+## Introspect (refresh_token)
+- url: `oauth2/token/revoke`
+- spec: https://tools.ietf.org/html/rfc7009
+- payload:
 `
 	"token": "TOKEN HERE (accepts access or refresh)"
 	"client_id": "carlos_loves_mac"
