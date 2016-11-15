@@ -1,0 +1,23 @@
+1) Issues with server validating the jwt
+
+There is no spec for custom claims in the jwt. For ease of use purposes,
+I'm adding the scopes to the jwt.
+
+Discussion is here:
+https://groups.google.com/forum/#!searchin/smart-on-fhir/scope$20jwt|sort:relevance/smart-on-fhir/m-iinHu5cU8/roEoWvklBwAJ
+
+This random dude has another idea:
+https://github.com/BlackPearSw/jwt-claims-fhir/blob/master/jwt-claims-fhir.md
+
+Long story short, read here:
+http://www.hl7.org/implement/standards/fhir/security.html
+
+2) Token introspection. There is no standard way to allow this. See
+http://stackoverflow.com/questions/12296017/how-to-validate-an-oauth-2-0-access-token-for-a-resource-server
+
+This has a proposal for the /introspect route.
+https://tools.ietf.org/html/rfc7662
+
+
+QUESTION: who should be allowed to introspect tokens?
+

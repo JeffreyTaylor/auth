@@ -1,0 +1,16 @@
+auth:
+  build: .
+  ports:
+    - "9011:9988"
+  volumes:
+    - .:/home/dev
+  links:
+    - db
+
+db:
+  build: ./db
+  ports:
+    - "3306:3306"
+  environment:
+    STARTUP_SQL: ./seed.sql
+    MYSQL_PASS: admin

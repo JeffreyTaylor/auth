@@ -1,0 +1,24 @@
+{
+  "token": {
+    "audience": "rakida.upmc.com",
+    "issuer": "rakida-auth.upmc.com",
+    "bearer": {
+      "symmetricKey": "testing",
+      "lifespanInMinutes": 1440
+    },
+    "refresh": {
+      "lifespanInMinutes": 2880
+    }
+  },
+  "grants": [
+    "client_credentials",
+    "refresh_token"
+  ],
+  "database": {
+    "dialect": "mysql",
+    "host": "db",
+    "username": "admin",
+    "password": "admin",
+    "database": "auth"
+  }
+}

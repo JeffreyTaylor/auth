@@ -1,0 +1,20 @@
+
+
+1) put all the good stuff in the jwt
+2) store all the stuff in the database
+
+3) allow for refresh tokens
+
+4) allow for invalidating tokens
+
+5) add state for both request and response
+  store this in the db
+
+  state
+         REQUIRED if the "state" parameter was present in the client
+         authorization request.  The exact value received from the
+         client.
+
+6) add token validation endpoint
+
+-----

@@ -1,0 +1,21 @@
+{
+  "name": "auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^3.1.8",
+    "glue": "^4.0.0",
+    "hapi": "^15.2.0",
+    "joi": "^9.2.0",
+    "lodash": "^4.16.6",
+    "mysql": "^2.12.0",
+    "node-uuid": "^1.4.7",
+    "sequelize": "^3.25.0"
+  }
+}
