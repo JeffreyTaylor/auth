@@ -1,10 +1,10 @@
 {
   "token": {
-    "audience": "rakida.upmc.com",
-    "issuer": "rakida-auth.upmc.com",
+    "audience": "my.app.com",
+    "issuer": "my-auth.server.com",
     "bearer": {
       "symmetricKey": "testing",
-      "lifespanInMinutes": 1440
+      "lifespanInMinutes": 525600
     },
     "refresh": {
       "lifespanInMinutes": 2880

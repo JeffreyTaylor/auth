@@ -1,10 +1,10 @@
 {
-  "1234_1234_1234": {
-    "name": "medivate@pitt.edu",
+  "carlos_loves_mac": {
+    "name": "carlos@mac.com",
     "scopes": [
-      "one",
-      "two",
-      "three"
+      "user/Patient.read",
+      "user/MedicationStatement.read",
+      "user/AllergyIntolerance.read"
     ]
   }
 }

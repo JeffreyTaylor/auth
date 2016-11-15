@@ -18,6 +18,5 @@ http://stackoverflow.com/questions/12296017/how-to-validate-an-oauth-2-0-access-
 This has a proposal for the /introspect route.
 https://tools.ietf.org/html/rfc7662
 
-
 QUESTION: who should be allowed to introspect tokens?
 
