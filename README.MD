@@ -35,7 +35,7 @@
 }
 `
 
-## Introspect
+## Revoke
 - url: `oauth2/token/revoke`
 - spec: https://tools.ietf.org/html/rfc7009
 - payload:
