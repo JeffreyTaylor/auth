@@ -24,7 +24,7 @@
  }`
 
 
-## Introspect (refresh_token)
+## Introspect
 - url: `oauth2/token/introspect`
 - spec: https://tools.ietf.org/html/rfc7662
 - outstanding questions: who is allowed to introspect tokens?
@@ -35,12 +35,13 @@
 }
 `
 
-## Introspect (refresh_token)
+## Introspect
 - url: `oauth2/token/revoke`
 - spec: https://tools.ietf.org/html/rfc7009
 - payload:
-`
+`{
 	"token": "TOKEN HERE (accepts access or refresh)"
 	"client_id": "carlos_loves_mac"
+}
 `
 
