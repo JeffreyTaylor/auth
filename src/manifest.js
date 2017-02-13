@@ -1,10 +1,6 @@
-const path = require('path'),
-  common = require('./common');
-
 module.exports = {
   connections: [{
     port: 9988,
-    //tls: common.ssl,
     routes: {
       validate: {
         options: {
