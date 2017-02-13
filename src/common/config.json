@@ -1,7 +1,7 @@
 {
   "token": {
-    "audience": "my.app.com",
-    "issuer": "my-auth.server.com",
+    "audience": "some.website.com",
+    "issuer": "auth.website.com",
     "bearer": {
       "symmetricKey": "testing",
       "lifespanInMinutes": 525600
